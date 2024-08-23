@@ -1,0 +1,104 @@
+.header-content{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    background-color: #003366;
+    display: flex;
+}
+
+/* Styles de base */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1;
+    background-color: #12586d;
+    color: black;
+}
+header {
+    background: #003366; /* Bleu foncé */
+    color: #fff;
+    padding: 0rem;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+    border: 3px solid #90EE90; /* Bordure vert clair */
+    margin-right: 5px;
+    padding: 0%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0%;
+}
+
+nav ul li a {
+    color:white;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #004080; /* Couleur de survol */
+    border-radius: 5px;
+}
+
+/* Styles des sections */
+.content {
+    padding: 2rem;
+    margin: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+.skills-icons, .contact-icons {
+    display: flex;
+    gap: 200px;
+    flex-wrap: wrap;
+}
+
+.skill-icon, .contact-icon {
+    width: 60px;
+    height: 60px;
+}
+
+/* Styles pour la réactivité */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: line;
+        align-items: center;
+    }
+
+    .profile {
+        flex-direction: line;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: line;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
